@@ -168,7 +168,7 @@ const Article = () => {
         <Form
           onFinish={onFinish}
           initialValues={{ status: null }}>
-          <Form.Item label="状态" name="status">
+          <Form.Item label="status" name="status">
             <Radio.Group>
               <Radio value={null}>total</Radio>
               <Radio value={0}>draft</Radio>
@@ -188,7 +188,6 @@ const Article = () => {
           </Form.Item>
 
           <Form.Item label="date" name="date">
-            {/* income locale attributes, control display*/}
             <RangePicker ></RangePicker>
           </Form.Item>
 
