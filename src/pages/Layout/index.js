@@ -13,7 +13,7 @@ import { useEffect } from 'react'
 
 const { Header, Sider } = Layout
 
-const GeekLayout = () => {
+const CMSLayout = () => {
   const { pathname } = useLocation()
   const { userStore, loginStore, channelStore } = useStore()
 
@@ -77,4 +77,4 @@ const GeekLayout = () => {
   )
 }
 
-export default observer(GeekLayout)
+export default observer(CMSLayout)
