@@ -4,6 +4,10 @@ import { useNavigate } from 'react-router-dom'
 import './index.scss'
 import { useStore } from '@/store'
 function Login () {
+  const warning = () => {
+     message.warning('phone number is 13811111111 and The verification code is 246810')
+  }
+  
   const { loginStore } = useStore()
   const navigate = useNavigate()
   async function onFinish (values) {
@@ -15,9 +19,11 @@ function Login () {
     // jump to Home
     navigate('/', { replace: true })
     // reminder username
-    message.success('登录成功')
+    message.success('LOGIN SUCCESSFUL')
   }
-
+  
+  warning();
+  
   return (
     <div className="login">
       <Card className="login-container">
